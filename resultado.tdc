@@ -1,0 +1,15 @@
+main:
+call imput;
+pop x;
+call imput;
+pop y;
+#T1 = 1 + x
+z = #T1;
+#T2 = x < y
+ifZ #T2 goto #l1
+#T3 = x + y
+z = #T3;
+goto #l2;
+#l1:z = 1234;
+#l2:push z;
+call output;

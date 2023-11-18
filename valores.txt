@@ -1,0 +1,10 @@
+MAIN{
+  DEC a,b;
+  INPUT a;
+  INPUT b;
+  a=1+2+b;
+  OUTPUT a;
+}
+        {printf("ifZ %s goto #l%i;\n", $3, nuevaLabel());
+        strcpy($$, $3);
+        printf("#l%i:  push %s;\n", nuevaLabel(), $3);
